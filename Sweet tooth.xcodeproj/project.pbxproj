@@ -13,6 +13,7 @@
 		077E57EB2C4020CC00D49069 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077E57EA2C4020CC00D49069 /* Preview Assets.xcassets */; };
 		077E57F22C40308D00D49069 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E57F12C40308D00D49069 /* Order.swift */; };
 		077E57F42C40333100D49069 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E57F32C40333100D49069 /* AddressView.swift */; };
+		077E57F62C4033F800D49069 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E57F52C4033F800D49069 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		077E57EA2C4020CC00D49069 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		077E57F12C40308D00D49069 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		077E57F32C40333100D49069 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		077E57F52C4033F800D49069 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				077E57E32C4020CB00D49069 /* Sweet_toothApp.swift */,
 				077E57E52C4020CB00D49069 /* ContentView.swift */,
+				077E57F52C4033F800D49069 /* CheckoutView.swift */,
 				077E57F32C40333100D49069 /* AddressView.swift */,
 				077E57F12C40308D00D49069 /* Order.swift */,
 				077E57E72C4020CC00D49069 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			files = (
 				077E57F22C40308D00D49069 /* Order.swift in Sources */,
 				077E57F42C40333100D49069 /* AddressView.swift in Sources */,
+				077E57F62C4033F800D49069 /* CheckoutView.swift in Sources */,
 				077E57E62C4020CB00D49069 /* ContentView.swift in Sources */,
 				077E57E42C4020CB00D49069 /* Sweet_toothApp.swift in Sources */,
 			);
