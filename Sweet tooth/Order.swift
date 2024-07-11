@@ -47,7 +47,10 @@ class Order: Codable {
         if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
             return false
         } else {
-            return true
+            for field in [name, streetAddress, city, zip] {
+                    if field.trimmingCharacters(in: .whitespaces).isEmpty { return false }
+                }
+                return true
         }
     }
     
@@ -63,6 +66,21 @@ class Order: Codable {
         }
         
         return baseCost
+    }
+    
+    init() {
+        if let savedOrder = UserDefaults.standard.data(forKey: "Order") {
+            if let decodedOrder = try? JSONDecoder().decode(Order.self, from: savedOrder) {
+                name = decodedOrder.name
+                streetAddress = decodedOrder.streetAddress
+                city = decodedOrder.city
+                zip = decodedOrder.zip
+                
+                return
+            }
+        }
+        
+        
     }
     
 }

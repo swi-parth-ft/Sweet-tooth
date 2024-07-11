@@ -40,46 +40,16 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "601E81D7-F222-4280-AD30-1AE21BEE6264"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sweet tooth/CheckoutView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "placeOrder()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "601E81D7-F222-4280-AD30-1AE21BEE6264 - b0e820b51ea1bfc9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Sweet_tooth.CheckoutView.placeOrder() async -&gt; ()"
-                  moduleName = "Sweet tooth.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pac/Desktop/Swift/Sweet%20tooth/Sweet%20tooth/CheckoutView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48">
-               </Location>
-               <Location
-                  uuid = "601E81D7-F222-4280-AD30-1AE21BEE6264 - fd0e996837c92ca0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for Sweet_tooth.CheckoutView.placeOrder() async -&gt; ()"
-                  moduleName = "Sweet tooth.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pac/Desktop/Swift/Sweet%20tooth/Sweet%20tooth/CheckoutView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
