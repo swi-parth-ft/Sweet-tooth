@@ -39,4 +39,18 @@ class Order {
         }
     }
     
+    var cost: Decimal {
+        var baseCost = Decimal(quatity) * 2
+        baseCost += Decimal(type) / 2
+        
+        if extraFrosting {
+            baseCost += Decimal(quatity)
+        }
+        if addSprinkles {
+            baseCost += Decimal(quatity) / 2
+        }
+        
+        return baseCost
+    }
+    
 }
