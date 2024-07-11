@@ -9,31 +9,40 @@ import SwiftUI
 import CoreHaptics
 
 struct ContentView: View {
-    @State private var count = 0
+  
     @State private var engine: CHHapticEngine?
-    
+    @State private var order = Order()
     var body: some View {
-        AsyncImage(url: URL(string: "https://hws.dev/img/logo.png")) { phase in
-            if let image = phase.image {
-                image
-                    .resizable()
-                    .scaledToFit()
-            } else if phase.error != nil {
-                Text("Error loading the picture")
-            } else {
-                ProgressView()
+        NavigationStack {
+            Form {
+                Section {
+                    Picker("Select your cake type", selection: $order.type) {
+                        ForEach(Order.types.indices, id: \.self) {
+                            Text(Order.types[$0])
+                        }
+                    }
+                    
+                    Stepper("Number of cakes: \(order.quatity)", value: $order.quatity, in: 3...20)
+                    
+                }
+                
+                Section {
+                    Toggle("Any Special requests?", isOn: $order.specialRequestEnabled)
+                    
+                    if order.specialRequestEnabled {
+                        Toggle("Add extra frosting", isOn: $order.extraFrosting)
+                        Toggle("Add extra sprinles", isOn: $order.addSprinkles)
+                    }
+                }
+                
+                Section {
+                    NavigationLink("Delivery details") {
+                        AddressView(order: order)
+                    }
+                }
             }
-            
+            .navigationTitle("Sweet Tooth")
         }
-        .frame(width: 200)
-        
-        Button("Taps: \(count)") {
-            count += 1
-        }
-        .sensoryFeedback(.increase, trigger: count)
-        
-        Button("Tap Me", action: complexSuccess)
-            .onAppear(perform: prepareHaptics)
     }
     
     func prepareHaptics() {
