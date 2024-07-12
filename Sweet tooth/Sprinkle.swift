@@ -46,10 +46,174 @@ struct Sprinkle: View {
                     .fill(Color.random)
                     .frame(width: 25, height: 5)
                     .rotationEffect(.degrees(angle - 10))
+                Sprinke()
             }
         }
         .frame(width: 190, height: 170)
         
+        
+    }
+}
+
+struct Sprinke: View {
+    
+    var angle = Int.random(in: 0...360)
+    var angle2 = Int.random(in: 0...360)
+    var angle3 = Int.random(in: 0...360)
+    var angle4 = Int.random(in: 0...360)
+    
+    var body: some View {
+        
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color.random)
+                .frame(width: 25, height: 5)
+                .rotationEffect(.degrees(Double(angle - 10)))
+            
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color.random)
+                .frame(width: 25, height: 5)
+                .rotationEffect(.degrees(Double(angle2 - 10)))
+            
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color.random)
+                .frame(width: 25, height: 5)
+                .rotationEffect(.degrees(Double(angle3 - 10)))
+        
+        RoundedRectangle(cornerRadius: 12)
+            .fill(Color.random)
+            .frame(width: 25, height: 5)
+            .rotationEffect(.degrees(Double(angle4 - 10)))
+        
+        RoundedRectangle(cornerRadius: 12)
+            .fill(Color.random)
+            .frame(width: 25, height: 5)
+            .rotationEffect(.degrees(Double(angle2 - 10)))
+        
+        
+    }
+    
+}
+
+struct MashSprinkle: View {
+    var body: some View {
+        VStack {
+            Spacer()
+            HStack {
+                Sprinke()
+                Sprinke()
+                Sprinke()
+                Sprinke()
+                Sprinke()
+                Sprinke()
+                Sprinke()
+            }
+            ZStack {
+                HStack(spacing: 1) {
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                }
+                HStack {
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                }
+            }
+            
+            ZStack {
+                HStack(spacing: -2) {
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                }
+                HStack {
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                }
+            }
+            
+            ZStack {
+                HStack(spacing: -7) {
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                }
+                HStack {
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                }
+            }
+            
+            ZStack {
+                HStack(spacing: -9) {
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                }
+                HStack {
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                }
+            }
+            
+            ZStack {
+                HStack(spacing: -11) {
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                }
+                HStack {
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                    Sprinke()
+                }
+            }
+
+        }
+        .background(.white.opacity(0))
         
     }
 }
@@ -65,5 +229,6 @@ extension Color {
 
 
 #Preview {
-    Sprinkle(angle: 5)
+   // Sprinkle(angle: 5)
+    MashSprinkle()
 }

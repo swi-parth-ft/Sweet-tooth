@@ -12,21 +12,30 @@ struct AddressView: View {
     @Bindable var order: Order
     
     var body: some View {
-        Form {
-            Section {
-                TextField("Name", text: $order.name)
-                TextField("Street Address", text: $order.streetAddress)
-                TextField("City", text: $order.city)
-                TextField("Zip", text: $order.zip)
-            }
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [Color.white, Color.yellow]), startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
             
-            Section {
-                NavigationLink("Check out") {
-                    CheckoutView(order: order)
+            
+            Form {
+                Section {
+                    TextField("Name", text: $order.name)
+                    TextField("Street Address", text: $order.streetAddress)
+                    TextField("City", text: $order.city)
+                    TextField("Zip", text: $order.zip)
                 }
+                .listRowBackground(Color.white.opacity(0.5))
                 
+                Section {
+                    NavigationLink("Check out") {
+                        CheckoutView(order: order)
+                    }
+                    
+                }
+                .disabled(order.hasValidAddress == false)
+                .listRowBackground(Color.white.opacity(0.5))
             }
-            .disabled(order.hasValidAddress == false)
+            .scrollContentBackground(.hidden)
         }
     }
 }

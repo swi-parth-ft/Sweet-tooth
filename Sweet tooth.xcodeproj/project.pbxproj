@@ -16,6 +16,8 @@
 		077E57F62C4033F800D49069 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E57F52C4033F800D49069 /* CheckoutView.swift */; };
 		07E0B4CD2C40B5C3006B39F8 /* FallingSprinklesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E0B4CC2C40B5C3006B39F8 /* FallingSprinklesView.swift */; };
 		07E0B4CF2C40B5E1006B39F8 /* Sprinkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E0B4CE2C40B5E1006B39F8 /* Sprinkle.swift */; };
+		07E0B4D32C40CA5D006B39F8 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 07E0B4D22C40CA5D006B39F8 /* MyParticle.sks */; };
+		07E0B4D52C40CA91006B39F8 /* SnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E0B4D42C40CA91006B39F8 /* SnowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		077E57F52C4033F800D49069 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		07E0B4CC2C40B5C3006B39F8 /* FallingSprinklesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallingSprinklesView.swift; sourceTree = "<group>"; };
 		07E0B4CE2C40B5E1006B39F8 /* Sprinkle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprinkle.swift; sourceTree = "<group>"; };
+		07E0B4D22C40CA5D006B39F8 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		07E0B4D42C40CA91006B39F8 /* SnowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 			children = (
 				077E57E32C4020CB00D49069 /* Sweet_toothApp.swift */,
 				077E57E52C4020CB00D49069 /* ContentView.swift */,
+				07E0B4D22C40CA5D006B39F8 /* MyParticle.sks */,
+				07E0B4D42C40CA91006B39F8 /* SnowView.swift */,
 				07E0B4CC2C40B5C3006B39F8 /* FallingSprinklesView.swift */,
 				07E0B4CE2C40B5E1006B39F8 /* Sprinkle.swift */,
 				077E57F52C4033F800D49069 /* CheckoutView.swift */,
@@ -141,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				077E57EB2C4020CC00D49069 /* Preview Assets.xcassets in Resources */,
+				07E0B4D32C40CA5D006B39F8 /* MyParticle.sks in Resources */,
 				077E57E82C4020CC00D49069 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +162,7 @@
 				077E57F22C40308D00D49069 /* Order.swift in Sources */,
 				077E57F42C40333100D49069 /* AddressView.swift in Sources */,
 				077E57F62C4033F800D49069 /* CheckoutView.swift in Sources */,
+				07E0B4D52C40CA91006B39F8 /* SnowView.swift in Sources */,
 				07E0B4CF2C40B5E1006B39F8 /* Sprinkle.swift in Sources */,
 				077E57E62C4020CB00D49069 /* ContentView.swift in Sources */,
 				07E0B4CD2C40B5C3006B39F8 /* FallingSprinklesView.swift in Sources */,

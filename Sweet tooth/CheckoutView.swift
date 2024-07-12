@@ -15,25 +15,28 @@ struct CheckoutView: View {
     @State private var showingErrors = false
     @State private var errorMessage = ""
     var body: some View {
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [Color.white, Color.yellow]), startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
         ScrollView {
             VStack {
-                AsyncImage(url: URL(string: "https://hws.dev/img/cupcakes@3x.jpg"),scale: 3) { image in
-                    image
-                        .resizable()
-                        .scaledToFit()
-                } placeholder: {
-                    ProgressView()
-                }
-                .frame(height: 233)
+                //                AsyncImage(url: URL(string: "https://hws.dev/img/cupcakes@3x.jpg"),scale: 3) { image in
+                //                    image
+                //                        .resizable()
+                //                        .scaledToFit()
+                //                } placeholder: {
+                //                    ProgressView()
+                //                }
+                //                .frame(height: 233)
                 
-                Text("your total cost is \(order.cost, format: .currency(code: "USD"))")
+                Text("Your total cost is \(order.cost, format: .currency(code: "USD"))")
                 
                 Button("Place Order") {
                     Task {
                         await placeOrder()
                     }
                 }
-                    .padding()
+                .padding()
             }
             
         }
@@ -50,6 +53,7 @@ struct CheckoutView: View {
         } message: {
             Text(errorMessage)
         }
+    }
     }
         
     func placeOrder() async {
